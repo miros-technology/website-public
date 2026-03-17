@@ -257,7 +257,7 @@ const copy: Record<Lang, Copy> = {
       host: "Nous contacter",
     },
     footer: {
-      copy: "Conçu pour le travail concentré, la confidentialité et la flexibilité.",
+      copy: "Conçu pour travailler au calme, en toute confidentialité et avec flexibilité.",
       privacy: "Politique de confidentialité",
       terms: "Conditions générales",
     },
