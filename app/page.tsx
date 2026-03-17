@@ -86,8 +86,8 @@ const copy: Record<Lang, Copy> = {
       download: "Download app",
     },
     models: {
-      eyebrow: "Network rollout",
-      title: "Three pod formats for real-world deployment.",
+      eyebrow: "Use cases",
+      title: "Three ways to use our pods in real-world deployments.",
       items: [
         {
           title: "Public",
@@ -184,8 +184,8 @@ const copy: Record<Lang, Copy> = {
       download: "Télécharger l'app",
     },
     models: {
-      eyebrow: "Déploiement",
-      title: "Trois formats de pods pour des déploiements réels.",
+      eyebrow: "Cas d'usage",
+      title: "Trois façons d'utiliser nos pods dans des déploiements concrets.",
       items: [
         {
           title: "Public",
@@ -282,8 +282,9 @@ const copy: Record<Lang, Copy> = {
       download: "App herunterladen",
     },
     models: {
-      eyebrow: "Rollout",
-      title: "Drei Pod-Formate für reale Einsatzorte.",
+      eyebrow: "Einsatzbereiche",
+      title:
+        "Drei Möglichkeiten, unsere Pods in realen Einsatzorten zu nutzen.",
       items: [
         {
           title: "Öffentlich",
@@ -380,8 +381,8 @@ const copy: Record<Lang, Copy> = {
       download: "Scarica app",
     },
     models: {
-      eyebrow: "Sviluppo rete",
-      title: "Tre formati di pod per deployment reali.",
+      eyebrow: "Casi d'uso",
+      title: "Tre modi di usare i nostri pod in contesti reali.",
       items: [
         {
           title: "Pubblico",
