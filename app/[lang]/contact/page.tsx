@@ -37,7 +37,7 @@ export default async function ContactPage({
   return (
     <>
       <header className="site-header light-header">
-        <Link href={routePath(lang)} className="brand dark-wordmark">
+        <Link href={routePath(lang)} className="brand dark-wordmark" prefetch={false}>
           <Image
             src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/cropped-B1_noBG-70x75.png`}
             alt="miros logo"
@@ -47,9 +47,9 @@ export default async function ContactPage({
           <span>miros</span>
         </Link>
         <nav>
-          <Link href={routePath(lang)}>{t.nav.home}</Link>
-          <Link href={routePath(lang, "about")}>{t.nav.about}</Link>
-          <Link href={routePath(lang, "contact")} className="pill-link">
+          <Link href={routePath(lang)} prefetch={false}>{t.nav.home}</Link>
+          <Link href={routePath(lang, "about")} prefetch={false}>{t.nav.about}</Link>
+          <Link href={routePath(lang, "contact")} className="pill-link" prefetch={false}>
             {t.nav.contact}
           </Link>
           <LanguageSelect id="contact-lang-select" locale={lang} segment="contact" />

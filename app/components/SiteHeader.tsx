@@ -17,7 +17,7 @@ export function SiteHeader({ locale, currentSegment }: Props) {
 
   return (
     <header className="site-header light-header">
-      <Link href={routePath(locale)} className="brand dark-wordmark">
+      <Link href={routePath(locale)} className="brand dark-wordmark" prefetch={false}>
         <Image
           src={`${BASE_PATH}/images/cropped-B1_noBG-70x75.png`}
           alt="miros logo"
@@ -28,12 +28,12 @@ export function SiteHeader({ locale, currentSegment }: Props) {
       </Link>
 
       <nav>
-        <Link href={routePath(locale)}>{t.nav.home}</Link>
-        <Link href={routePath(locale, "workpods")}>{t.nav.workpods}</Link>
-        <Link href={routePath(locale, "phone-booths")}>{t.nav.phoneBooths}</Link>
-        <Link href={routePath(locale, "swiss-made")}>{t.nav.swissMade}</Link>
-        <Link href={routePath(locale, "about")}>{t.nav.about}</Link>
-        <Link href={routePath(locale, "contact")} className="pill-link">
+        <Link href={routePath(locale)} prefetch={false}>{t.nav.home}</Link>
+        <Link href={routePath(locale, "workpods")} prefetch={false}>{t.nav.workpods}</Link>
+        <Link href={routePath(locale, "phone-booths")} prefetch={false}>{t.nav.phoneBooths}</Link>
+        <Link href={routePath(locale, "swiss-made")} prefetch={false}>{t.nav.swissMade}</Link>
+        <Link href={routePath(locale, "about")} prefetch={false}>{t.nav.about}</Link>
+        <Link href={routePath(locale, "contact")} className="pill-link" prefetch={false}>
           {t.nav.contact}
         </Link>
         <LanguageSelect

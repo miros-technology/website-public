@@ -80,8 +80,8 @@ export default async function LocalizedHomePage({
           <a href="#models">{t.nav.models}</a>
           <a href="#features">{t.nav.features}</a>
           <a href="#swiss">{t.nav.swiss}</a>
-          <Link href={routePath(lang, "about")}>{t.nav.about}</Link>
-          <Link href={routePath(lang, "contact")} className="pill-link">
+          <Link href={routePath(lang, "about")} prefetch={false}>{t.nav.about}</Link>
+          <Link href={routePath(lang, "contact")} className="pill-link" prefetch={false}>
             {t.nav.contact}
           </Link>
           <LanguageSelect id="lang-select" locale={lang} />
@@ -247,7 +247,7 @@ export default async function LocalizedHomePage({
             <a className="btn btn-primary" href={RENT_URL} target="_blank" rel="noreferrer">
               {t.cta.rent}
             </a>
-            <Link className="btn btn-secondary" href={routePath(lang, "contact")}>
+            <Link className="btn btn-secondary" href={routePath(lang, "contact")} prefetch={false}>
               {t.cta.host}
             </Link>
           </div>
